@@ -1,66 +1,26 @@
-## Foundry
+# OurToken - Simple ERC20 Implementation
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+This project is a simple implementation of an ERC20 token named **OurToken** using Solidity. The token includes standard ERC20 functionality such as transfers, allowances, and approvals. 
 
 ## Usage
-
-### Build
-
-```shell
-$ forge build
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/OurToken.git
+cd OurToken
 ```
-
-### Test
-
-```shell
-$ forge test
+2. Install dependencies:
+```bash
+make install
 ```
-
-### Format
-
-```shell
-$ forge fmt
+3. Compile the contract:
+```bash
+make build
 ```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
+4. Deploy the Contract: (option: local, sepolia, or zk)
+```bash
+make deploy
 ```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+5. Testing (optional): -> local, sepolia, zk
+```bash
+make test
 ```
