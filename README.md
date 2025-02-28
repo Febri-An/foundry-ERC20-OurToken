@@ -24,3 +24,7 @@ make deploy
 ```bash
 make test
 ```
+
+## Result
+This contract has been verified, you can check the results on Seplia Etherscan. 
+address contract: `0x990E217f651ba36BD2f93c618aa48d60Ab238Df9`
